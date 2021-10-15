@@ -13,13 +13,14 @@ namespace xadrez_console.xadrez
             Coluna = coluna;
             Linha = linha;
         }
-        public override string ToString()
-        {
-            return "" + Coluna + Linha;
-        }
         public Posicao ToPosicao()
         {
             return new Posicao(8 - Linha, Coluna - 'a');
         }
+        public override string ToString()
+        {
+            return "" + Coluna + Linha;
+        }
+        
     }
 }
